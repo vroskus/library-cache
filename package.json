@@ -1,6 +1,6 @@
 {
   "name": "@vroskus/library-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cache",
   "author": "Vilius Roškus <vilius@regattas.eu>",
   "license": "MIT",
@@ -9,9 +9,6 @@
     "url": "git+https://github.com/vroskus/library-cache.git"
   },
   "main": "dist/index.js",
-  "files": [
-    "dist/index.js"
-  ],
   "scripts": {
     "postinstall": "npm run build",
     "build": "tsc",
@@ -20,6 +17,7 @@
     "test:e2e": "echo 'No tests'"
   },
   "dependencies": {
+    "@types/lodash": "4.14.192",
     "lodash": "4.17.21",
     "node-cache": "4.2.1"
   },
