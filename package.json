@@ -9,6 +9,10 @@
     "url": "git+https://github.com/vroskus/library-cache.git"
   },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "postinstall": "npm run build",
     "build": "tsc",
