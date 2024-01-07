@@ -3,8 +3,8 @@ import JSCacheTags from './lib';
 
 // Types
 import type {
-  $Config as Config,
   $Tags,
+  $Config as Config,
 } from './types';
 
 export type $Config = Config;
@@ -28,9 +28,9 @@ class CacheService<C extends $Config> {
     tags,
     ttl,
   }: {
+    getDataAction: () => Promise<D>;
     key: string;
     tags: $Tags;
-    getDataAction: () => Promise<D>;
     ttl?: number;
   }): Promise<D> {
     let cachedData = await this.#getData<D>(key);
