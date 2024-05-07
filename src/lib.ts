@@ -15,7 +15,7 @@ class JSCacheTags extends NodeCache {
     this.ERRORS["TAGS_NOT_FOUND"] = _template("Tags not found.");
   }
 
-  set = (key, value, tags = undefined, ttl, cb) => {
+  set = (key, value, tags: Array<string> | undefined = undefined, ttl, cb) => {
     let valueWithTags = value,
         error;
 
