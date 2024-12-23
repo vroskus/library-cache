@@ -9,6 +9,8 @@ import type {
 
 export type $Config = Config;
 
+const defaultTtl: number = 10000;
+
 class CacheService<C extends $Config> {
   cache: JSCacheTags;
 
@@ -19,7 +21,7 @@ class CacheService<C extends $Config> {
   }: C) {
     this.cache = new JSCacheTags();
 
-    this.ttl = ttl || 10000;
+    this.ttl = ttl || defaultTtl;
   }
 
   async get<D>({
