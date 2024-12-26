@@ -27,7 +27,7 @@
     "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.13",
     "@types/node": "^22.10.2",
-    "@vroskus/eslint-config": "^1.0.21",
+    "@vroskus/eslint-config": "^1.0.23",
     "typescript": "^5.7.2"
   }
 }
