@@ -15,8 +15,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "npm run test:eslint && npm run test:e2e",
+    "test": "npm run test:eslint && npm run test:type && npm run test:e2e",
     "test:eslint": "eslint src --fix",
+    "test:type": "tsc",
     "test:e2e": "echo 'No tests'"
   },
   "dependencies": {
@@ -25,8 +26,8 @@
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "@types/lodash": "^4.17.21",
-    "@types/node": "^25.0.3",
+    "@types/lodash": "^4.17.23",
+    "@types/node": "^25.0.9",
     "@vroskus/eslint-config": "^1.0.30",
     "typescript": "^5.9.3"
   }
