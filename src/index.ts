@@ -97,7 +97,9 @@ class CacheService<C extends $Config> {
     }> {
     return new Promise((resolve, reject) => {
       this.cache.delByTags(
-        [tag],
+        [
+          tag,
+        ],
         (error, count) => {
           if (error) {
             return reject(error);
